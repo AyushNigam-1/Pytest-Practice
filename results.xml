@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="2" time="0.036" timestamp="2026-05-24T17:14:59.882963+05:30" hostname="ayu-IdeaPad-3-15ALC6-Ub"><testcase classname="test_cicd" name="test_database_migration_success" time="0.001" /><testcase classname="test_cicd" name="test_api_endpoint_timeout" time="0.001"><failure message="AssertionError: Endpoint exceeded latency threshold&#10;assert 120 &lt;= 50">def test_api_endpoint_timeout():
+        # Simulating an API endpoint that took too long and failed
+        expected_latency = 50
+        actual_latency = 120
+&gt;       assert actual_latency &lt;= expected_latency, "Endpoint exceeded latency threshold"
+E       AssertionError: Endpoint exceeded latency threshold
+E       assert 120 &lt;= 50
+
+test_cicd.py:13: AssertionError</failure></testcase></testsuite></testsuites>
